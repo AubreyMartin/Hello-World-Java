@@ -32,7 +32,7 @@ public class Student {
 	      this.studentId = studentId;
      }
     public String toString(){
-    	return "First Name: " + firstName + "Last Name: " + lastName
+    	return "First Name: " + firstName + " Last Name: " + lastName
     			+ "Age: " + age + " StudentId " +studentId;
     }
 }
