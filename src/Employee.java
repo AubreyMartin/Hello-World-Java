@@ -4,6 +4,13 @@ public class Employee {
 	private int age;
 	private String officeCity;
 	private int id;
+	public Employee(String firstName, String lastName, int age ,String officeCity , int id){
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = age;
+		this.officeCity = officeCity;
+		this.id = id;
+	}
 	public void setFirstName(String firstName){
 		this.firstName = firstName;
 	}
@@ -33,6 +40,12 @@ public class Employee {
     }
      public int getId(){
     	 return this.id;
+    }
+    @Override
+    public String toString(){
+    	return "Employee Details: " + "First Name: " + firstName
+    			+ "Last Name: " + lastName + "Age: " + age
+    			+ "Office City: " + officeCity + "Employee Id: " + id;
     }
 }
 //LastName
